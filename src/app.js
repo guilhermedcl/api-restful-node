@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-//convertendo os dados que chegam no POST para JSON.
+//convertendo os dados que chegam no POST para JSON
 app.use(express.json());
 
 // criando um objeto para armazenar os materiais
@@ -55,7 +55,7 @@ app.delete('/materials/:id', (req, res) => {
 	res.send('Material removido com sucesso!')
 })
 
-// inicia o servidor na porta definida e exibe uma mensagem no consol
+// inicia o servidor na porta definida e exibe uma mensagem no console
 app.listen(port, () => {
     console.log('Servidor rodando na porta: ' + port)
 })
